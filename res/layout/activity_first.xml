@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FirstActivity"
+    android:orientation="vertical"
+    android:background="#cccccc">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp" >
+
+        <TableRow >
+
+    <TextView
+        android:id="@+id/tuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号" />
+
+	<EditText 
+	    android:id="@+id/uname"
+         android:background="#ffffff"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+	</TableRow>
+	<TableRow><TextView/></TableRow>
+	<TableRow>
+
+	     <TextView
+	         android:id="@+id/tupwd"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="用户名" />
+
+		<EditText 
+	    android:id="@+id/upwd"
+	    android:background="#ffffff"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+	</TableRow>
+	
+	 </TableLayout>
+
+	   <Button
+	       android:id="@+id/btninsert"
+	       android:layout_width="200dp"
+	       android:layout_height="wrap_content"
+	       android:text="添加" />
+"
+
+	    <Button
+	        android:id="@+id/btnupdate"
+	       android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:text="更新" />
+
+	     <Button
+	         android:id="@+id/btndelete"
+	        android:layout_width="200dp"
+	         android:layout_height="wrap_content"
+	         android:text="删除" />
+
+   	    <Button android:id="@+id/btncreatedb"
+	        android:text="创建数据库"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"/>
+   	    <Button android:id="@+id/btnupdatedb"
+	        android:text="更新数据库"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"/>
+   	    <Button android:id="@+id/btnquery"
+	        android:text="查询数据"
+	         android:layout_width="200dp"
+	        android:layout_height="wrap_content"/>
+
+   	    <Button
+   	        android:id="@+id/btncaozuo"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="各种操作" />
+   	   
+</LinearLayout>

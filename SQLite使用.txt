@@ -1,0 +1,39 @@
+1.创建一个操作数据库的辅助类，继承sqliteopenhelper,重写方法 oncreate、 onupgrade，
+	功能有2个：a提供创建和更新，b提供获取数据库的方法getReadableDatabase()、getWritableDatabase()
+	目的：获得数据库
+2.通过辅助类得到sqlitedatabase对象，从而实现各种操作
+
+
+
+首先需要配置 adb的环境变量：D:\ruanjian\adt-bundle-windows-x86-20131030\sdk\platform-tools
+//adb install
+//adb remont？？
+adb shell
+ls--查看所有文件
+cd--切换路径
+
+
+1|root@generic:/ # cd /data/data/cn.thcic.sqlite/databases--------------进入当前应用程序的数据库文件夹
+cd /data/data/cn.thcic.sqlite/databases
+
+127|root@generic:/data/data/cn.thcic.sqlite/databases # sqlite3 mytest-------不存在
+sqlite3 mytest
+SQLite version 3.7.11 2012-03-20 11:35:50
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .tables---查看表
+.tables
+sqlite> .exit---退出
+.exit
+root@generic:/data/data/cn.thcic.sqlite/databases # sqlite3 mydb------存在的数据库
+sqlite3 mydb
+SQLite version 3.7.11 2012-03-20 11:35:50
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> select * from user;
+select * from user;
+2|abc2
+3|abc3
+33|abc33
+sqlite>
+
